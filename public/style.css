@@ -19,7 +19,7 @@ body {
 
 
 body{
-  background: url("img/wallpaper.jpg");
+  background: gray;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -33,11 +33,11 @@ img{
 }
 
 main{
-  border: 1px solid black;
+  
   border-radius: 1px;
   height: 620px;
   width: 900px;
-  background-color: white;
+  background-color: whitesmoke;
   margin-top: -2%;
   margin-left: 18%;
 }
@@ -69,7 +69,7 @@ input::placeholder{
   width: 150px;
   margin-left: 1%;
   font-weight: 700;
-  background-color: rgb(104, 204, 238);
+  background-color: lightpink;
 }
 
 .clearCompleteBtn{
@@ -77,7 +77,7 @@ input::placeholder{
   width: 120px;
   font-weight: 700;
   font-size: 10px;
-  background-color: rgb(104, 204, 238);
+  background-color: lightpink;
   margin-left: 35%;
 }
 
@@ -86,7 +86,7 @@ input::placeholder{
   width: 120px;
   font-weight: 700;
   font-size: 10px;
-  background-color: rgb(104, 204, 238);
+  background-color: lightpink;
   margin-left: 2%;
 }
 
@@ -101,4 +101,17 @@ input[type=checkbox]{
 
 li{
   list-style: none;
+  border: solid black;
+  margin-top: 1%;
+}
+
+.logOut{
+  border: solid black;
+  text-align: center;
+  width: 10%;
+  font-size: 1.5rem;
+}
+
+h1{
+  text-align: center;
 }

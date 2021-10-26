@@ -11,3 +11,7 @@
 ## Credit
 
 Modified from Scotch.io's auth tutorial
+
+<img src="tasklist.png"></img>
+
+Link to live site: [https://danielmtran-tasks.netlify.app]
