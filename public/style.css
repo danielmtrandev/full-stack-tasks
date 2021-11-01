@@ -69,7 +69,7 @@ input::placeholder{
   width: 150px;
   margin-left: 1%;
   font-weight: 700;
-  background-color: lightpink;
+  background-color: teal;
 }
 
 .clearCompleteBtn{
@@ -77,7 +77,7 @@ input::placeholder{
   width: 120px;
   font-weight: 700;
   font-size: 10px;
-  background-color: lightpink;
+  background-color: teal;
   margin-left: 35%;
 }
 
@@ -86,7 +86,7 @@ input::placeholder{
   width: 120px;
   font-weight: 700;
   font-size: 10px;
-  background-color: lightpink;
+  background-color: teal;
   margin-left: 2%;
 }
 
@@ -101,8 +101,9 @@ input[type=checkbox]{
 
 li{
   list-style: none;
-  border: solid black;
+  border: solid teal;
   margin-top: 1%;
+  width: 90%;
 }
 
 .logOut{
@@ -114,4 +115,12 @@ li{
 
 h1{
   text-align: center;
+}
+
+#indexTitle{
+  color: teal;
+}
+
+.bodyCont h1{
+  color: teal;
 }

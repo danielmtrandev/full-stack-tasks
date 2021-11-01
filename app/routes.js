@@ -9,11 +9,14 @@ module.exports = function(app, passport, db) {
   
       // PROFILE SECTION =========================
       app.get('/profile', isLoggedIn, function(req, res) {
-          db.collection('todo').find().toArray((err, result) => {
+          db.collection('todo').find({createdBy: req.user._id}).toArray((err, result) => {
             if (err) return console.log(err)
-            res.render('profile.ejs', { todos: result });
-            })
+            res.render('profile.ejs', { 
+              user : req.user,
+              todos: result 
+            });
           })
+      })
   
       // LOGOUT ==============================
       app.get('/logout', function(req, res) {
@@ -28,6 +31,7 @@ module.exports = function(app, passport, db) {
       {
         todo: req.body.todo,
         status: 'incomplete',
+        createdBy: req.user._id
       },
       (err, result) => {
         if (err) return console.log(err);
